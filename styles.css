@@ -1,0 +1,145 @@
+/*
+1. website border: dimension, margin, background
+2. default font and font size
+*/
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    
+    background-image: url("https://img.freepik.com/premium-photo/set-detox-buddha-bowl-vegetarian-food-concept-healthy-eating-stone-background-top-view_187166-58027.jpg?w=2000");
+    background-size:cover;
+    background-attachment: fixed;
+    
+    font-family: Trebuchet MS;
+    font-size: 20px;
+    color: #4F4635;
+}
+/*
+1. header: margin and alignment
+2. paragraph: margin and alignment
+*/
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+/*
+1. h4: margin
+*/
+h4 {
+    margin: 20 0 5 0;
+}
+/*
+1. form: dimension, padding, margin, background, border
+*/
+form {
+    width: 70vw;
+    max-width: 500px;
+    min-width: 300px;
+    
+    padding-bottom: 1em;
+    margin: 1.5rem auto;
+    
+    background-color: #E3DEC3;
+    
+    border: 10px solid #4F4635;
+    border-radius: 1.5rem;
+}
+/*
+1. fieldset(form border): padding, border
+*/
+fieldset {
+    padding: 1.5rem 1.5rem;
+    border: none;
+    border-bottom: 3px solid #3b3b4f;
+}
+/*
+1. fieldset(form border): last <fieldset>
+*/
+fieldset:last-of-type {
+    border-bottom: none;
+}
+/*
+1. label: make block, margin
+*/
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+/*
+1. input (text box, radio, checkbox, submit): dimension, margin
+2. textarea (comment): dimension, margin
+3. select (dropdown): dimension, margin
+*/ 
+input, textarea, select {
+    width: 100%;
+    min-height: 2em;
+    margin: 10px 0 0 0;
+}
+/*
+1. input: background, text color, border
+2. textarea: background, text color, border
+*/
+input, textarea {
+    background-color: #FCFBE3;
+    
+    color: #0a0a23;
+    
+    border: 1px solid #FCFBE3;
+    border-radius: 5px;
+}
+/*
+1. "Submit" button: make block, dimension, margin, font size, background, border
+*/
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    height: 3em;
+    min-width: 300px;
+    margin: 1em auto;
+
+    background-color: #4F4635;
+
+    font-size: 1.2rem;
+    color: #E3DEC3;
+    
+    border-color: white; 
+    border-radius: 5px;
+}
+/*
+1. hyperlink: color
+*/
+a {
+    color: #826A4E;
+}
+
+/*
+1. dietary choice dropdown list: top margin
+*/
+.dietary {
+    margin: 0.5em 0 0 0;
+}
+/*
+1. make <input> and <label> inline
+*/
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+/* container of title and description */
+.container-top {
+    background-color: #E3DEC3;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1px 0;
+    border-bottom: 10px solid #4F4635;
+} 
+/* container of contact us */
+.container-bottom {
+    background-color: #E3DEC3;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1px 0;
+    border-top: 10px solid #4F4635;
+} 

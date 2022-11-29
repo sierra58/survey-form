@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- apply CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- window tab title -->
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <main>
+      <!-- container of title and description -->
+      <div id="container-top" class="container-top">
+        <!-- 1. website title -->
+        <h1 id="title">Survey Form</h1>
+
+        <!-- 2. description -->
+        <p id="description">Please take a few minutes to tell us about your eating styles and habits.</p>
+      </div>
+
+      <!-- 3. survey form -->
+      <form id="survey-form">
+
+        <!-- 3a. personal info -->
+        <fieldset id="personal-info-fieldset">
+          <!-- name -->
+          <label id="name-label" for="name">Name<input id="name" name="name" type="text" placeholder="Enter your name" required></label>
+          <!-- email -->
+          <label id="email-label" for="email">Email<input id="email" name="email" type="email" placeholder="Enter your Email" required></label>
+          <!-- age -->
+          <label id="number-label" for="number">Age (optional) <input id="number" name="age" type="number" min="13" max="120" placeholder="Your age"></label>
+          <!-- gender -->
+          <label for="dropdown">Gender
+            <select id="dropdown" required>
+              <option value="1">(Select one)</option>
+              <option value="2">Male</option>
+              <option value="3">Female</option>
+              <option value="4">Non-binary</option>
+              <option value="5">Other</option>
+              <option value="6">Rather not say</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <!-- 3b. questions about eating styles -->
+        <fieldset id="eating-styles-fieldset">
+          <!-- eating at home or outside -->
+          <label><h4>Do you prefer eating at home or outside?</h4></label>
+          <label for="at-home"><input id="at-home" name="home-outside" type="radio" value="at-home" required checked class="inline">At home</label>
+          <label for="outside"><input id="outside" name="home-outside" type="radio" value="outside" required class="inline">Outside</label>
+          <!-- religious dietary restrictions -->
+          <label><h4>Do you have a religious dietary restrictions?</h4></label>
+          <label for="rel-yes"><input id="rel-yes" name="rel-restrictions" type="radio" value="rel-yes" checked class="inline">Yes</label>
+          <label for="rel-no"><input id="rel-no" name="rel-restrictions" type="radio" value="rel-no" class="inline">No</label>
+          <!-- dietary choices -->
+          <label><h4>Do you have a dietary choice?</h4></label>
+          <label for="dietary-choice">
+            <select id="dietary-choice" class="dietary">
+              <option value="1">(Select one)</option>
+              <option value="2">Omnivore</option>
+              <option value="3">Vegeterian</option>
+              <option value="4">Vegan</option>
+              <option value="5">Pescatarian</option>
+              <option value="6">Other</option>
+            </select>
+          </label>
+          <!-- regional cuisines -->
+          <label><h4>Which regional cuisine(s) do you prefer?</h4></label>
+          <label for="african"><input id="african" name="african" type="checkbox" value="african" class="inline">African</label>
+          <label for="asian"><input id="asian" name="asian" type="checkbox" value="asian" class="inline">Asian</label>
+          <label for="american"><input id="american" name="american" type="checkbox" value="american" class="inline">American</label>
+          <label for="european"><input id="european" name="european" type="checkbox" value="european" class="inline">European</label>
+          <label for="oceanic"><input id="oceanic" name="oceanic" type="checkbox" value="oceanic" class="inline">Oceanic</label>
+        </fieldset>
+
+        <!-- 3c. additional comments -->
+        <fieldset id="additional-comments-fieldset">
+          <label for="additional-comments"><h4>Any other eating styles or habits of yours that you would like to add?</h4>
+            <textarea id="**comments**" name="**comments**" rows="3" cols="30" placeholder="Enter your comment here"></textarea>
+          </label>
+        </fieldset>
+
+        <!-- 3d. submit button -->
+        <input id="submit" type="submit" value="Submit">
+      </form>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <!-- container of contact us -->
+      <div id="container-bottom" class="container-bottom">
+        <!-- contact -->
+        <p>
+        <strong>Contact us</strong><br>
+        </p>
+      
+        <p>
+        <!-- telephone -->
+        (123) 456-7890 <br>
+        <!-- email -->
+        customer-service@eatingstyles.com <br>
+        <!-- website -->
+        <a href="" target="_blank">www.healthyeating.com</a> <br>
+        <!-- address -->
+        1234 Happy Ave, Vancouver, BC H3F 3D2
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
