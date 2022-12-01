@@ -1,2 +1,7 @@
 # survey-form
-Survey Form | A certification project assigned by freeCodeCamp | [html, css, font-end web development, project]
+
+## Survey Form
+- Certification project assigned by freeCodeCamp
+
+## Tags
+html, css, front-end web development, tutorial
